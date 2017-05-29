@@ -1,0 +1,159 @@
+/*
+	Breakpoints
+*/
+
+
+///////////////////////////////////////
+/////// ====== DEFAULTS ======/////////
+///////////////////////////////////////
+
+/* Mobile */
+@mixin mobile {
+  @media (max-width:667px) {
+    @content;
+  }
+}
+
+
+/* Mobile Portrait */
+@mixin mobilePortrait {
+  @media (max-width:460px) {
+    @content;
+  }
+}
+
+/* Mobile Landscape */
+@mixin mobileLandscape {
+  @media (min-width:461px) and (max-width:667px) {
+    @content;
+  }
+}
+
+
+/* Tablet */
+@mixin tablet {
+  @media (max-width:960px) {
+    @content;
+  }
+}
+
+/* Tablet Portrait */
+@mixin tabletPortrait {
+  @media (min-width:668px) and (max-width:960px) {
+    @content;
+  }
+}
+
+/* Tablet Landscape */
+@mixin tabletLandscape {
+  @media (min-width:961px) and (max-width:1024px) {
+    @content;
+  }
+}
+
+/* Desktop */
+@mixin desktop {
+  @media (min-width:1025px) {
+    @content;
+  }
+}
+
+
+
+///////////////////////////////////////////////
+/////// ====== DEVICE SPECIFICs ======/////////
+///////////////////////////////////////////////
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@mixin iphone5 {
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+/* Portrait */
+@mixin iphone5Portrait {
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    @content;
+  }
+}
+/* Landscape */
+@mixin iphone5Landscape {
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@mixin iphone6 {
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+/* Portrait */
+@mixin iphone6Portrait {
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    @content;
+  }
+}
+/* Landscape */
+@mixin iphone6Landscape {
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    @content;
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@mixin iphone6Plus {
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    @content;
+  }
+}
+/* Portrait */
+@mixin iphone6PlusPortrait{
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    @content;
+  }
+}
+/* Landscape */
+@mixin iphone6PlusLandscape {
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    @content;
+  }
+}
