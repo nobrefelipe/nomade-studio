@@ -2,5 +2,7 @@
 @import "base/breakpoints";
 @import "base/flexy-layout";
 @import "base/classes";
+@import "base/typography";
 
-@import "lib/sn-magnifier";
+@import "structure/main";
+@import "structure/nav-bar";

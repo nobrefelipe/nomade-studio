@@ -26,11 +26,11 @@ var gulp = require('gulp'),
     },
     images: {
       src: 'dev/img',
-      dest: 'dist/img'
+      dest: 'static/img'
     },
     svgs: {
       src: 'dev/svg',
-      dest: 'dist/svg'
+      dest: 'static/svg'
     }
   };
 
@@ -74,7 +74,7 @@ var gulp = require('gulp'),
 */
   gulp.task('scripts', function() {
     gulp.src([
-        //paths.js.bower + '/svg4everybody/dist/svg4everybody.js',
+        paths.js.bower + '/svg4everybody/dist/svg4everybody.js',
         // paths.js.bower + '/owl.carousel/dist/owl.carousel.min.js',
         paths.js.src + '/**/*.js'
       ])
