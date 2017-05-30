@@ -1,7 +1,7 @@
 <template lang="html">
 
 
-  <section class="nav-bar">
+  <section class="navBar">
 
     <!-- LOGO -->
     <router-link to="/" id="logo">
@@ -15,44 +15,56 @@
     </router-link>
 
 
+
+
+
     <!-- MAIN NAV -->
-    <nav class="main-nav">
+    <nav class="mainNav">
 
-      <router-link to="/photography" title="PHOTOGRAPHY">PHOTOGRAPHY</router-link>
-      <router-link to="/web-development" title="WEB DEVELOPMENT">WEB DEVELOPMENT</router-link>
-
-    </nav>
+      <router-link to="/photography" title="PHOTOGRAPHY">photography</router-link>
+      <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
 
-    <!-- SECONDARY NAV -->
-    <nav class="secondary-nav">
-
-      <router-link to="/about" title="ABOUT ME">about</router-link>
-      <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>
+      <router-link to="/about" title="ABOUT ME" class="is-only__small">about</router-link>
+      <a href="mailto:felipe@nomade.studio" title="HIRE ME"  class="is-only__small">hire me</a>
 
     </nav>
 
 
-    <!-- SOCIAL NAV -->
-    <nav class="social-nav">
 
-      <a href="https://github.com/nobrefelipe" title="GITHUB" target="_blank">
+    <div class="navBar-bottom">
 
-        <svg role="img" title="Github">
-          <use xlink:href="./static/svg/svgstore.svg#github"/>
-        </svg>
+      <!-- SECONDARY NAV -->
+      <nav class="secondaryNav is-hidden__small">
 
-      </a>
+        <router-link to="/about" title="ABOUT ME">about</router-link>
+        <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>
 
-      <a href="http://instagram.com/canalnomade" title="INSTAGRAM" target="_blank">
+      </nav>
 
-        <svg role="img" title="Instagram">
-          <use xlink:href="./static/svg/svgstore.svg#instagram"/>
-        </svg>
 
-      </a>
+      <!-- SOCIAL NAV -->
+      <nav class="socialNav">
 
-    </nav>
+        <a href="https://github.com/nobrefelipe" title="GITHUB" target="_blank">
+
+          <svg role="img" title="Github">
+            <use xlink:href="./static/svg/svgstore.svg#github"/>
+          </svg>
+
+        </a>
+
+        <a href="http://instagram.com/canalnomade" title="INSTAGRAM" target="_blank">
+
+          <svg role="img" title="Instagram">
+            <use xlink:href="./static/svg/svgstore.svg#instagram"/>
+          </svg>
+
+        </a>
+
+      </nav>
+
+    </div>
 
 
 

@@ -37,17 +37,14 @@ a{
   transition: all .3s ease-in;
 
 
-  a{
+  &:hover{
 
-    &:hover{
+    color: $pink;
 
-      color: $pink;
-
-      svg{
-        fill: $pink;
-      }
+    svg{
+      fill: $pink;
     }
-
   }
+
 
 }

@@ -1,0 +1,45 @@
+
+#logo{
+
+  float: left;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg{
+
+    width: 65px;
+    height: 65px;
+
+  }
+
+
+  span{
+    font-size: 13px;
+  }
+
+  @include tablet{
+
+    svg{
+      width: 40px;
+      height: 40px;
+    }
+
+    span{
+      font-size: 10px;
+    }
+
+  }
+
+  @include mobile{
+
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+}

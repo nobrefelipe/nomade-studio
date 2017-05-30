@@ -154,6 +154,8 @@
   &-stick{
     &__left{margin-right: auto;}
     &__right{margin-left: auto;}
+    &__top{margin-bottom: auto;}
+    &__bottom{margin-top: auto;}
   }
 
 
@@ -181,12 +183,18 @@
   &-hidden{
     &__mobile  {@include mobile {display: none !important;}}
     &__desktop {@include desktop  {display: none !important;}}
+    &__small {@include tablet  {display: none !important;}}
   }
 
   &-only{
     &__mobile {
       display: none;
-      @include mobile {display: block !important;}}
+      @include mobile {display: block !important;}
+    }
+    &__small {
+      display: none;
+      @include tablet  {display: block !important;}
+    }
   }
 
 
