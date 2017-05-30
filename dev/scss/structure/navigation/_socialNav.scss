@@ -2,20 +2,29 @@
 .socialNav{
 
   float: left;
+
   width: 100%;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
+
   a{
+
     padding: 10px;
+
     height: 45px;
+
   }
+
 
   svg{
 
     width: 25px;
+
     height: 25px;
 
   }
@@ -24,11 +33,15 @@
   @include tablet{
 
     position: fixed;
+
     top:10px;
+
     right: 5px;
+
     width: auto;
 
   }
+
 
   @include mobile{
 
@@ -37,11 +50,11 @@
     svg{
 
       width: 20px;
+
       height: 20px;
 
     }
 
   }
-
 
 }//.social-nav

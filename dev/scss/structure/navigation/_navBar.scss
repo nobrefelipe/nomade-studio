@@ -1,58 +1,65 @@
 .navBar {
 
   position: fixed;
+
   left: 0;
+
   top: 0;
+
   z-index: 1000;
 
   width: 300px;
+
   height: 100vh;
+
   padding: 20px 15px 10px;
 
   background: #F4F4F4;
+
   box-shadow: 0 0 4px rgba(0,0,0,0.34);
 
   display: flex;
+
   align-items: flex-start;
+
   justify-content: center;
+
   flex-wrap: wrap;
 
 
   @include tablet{
 
     width: 100vw;
+
     height: 150px;
+
     padding-top: 10px;
 
   }
 
+
   @include mobile{
 
     height: 120px;
+
     justify-content: flex-start;
 
   }
 
 
   &-bottom{
+
     margin-top: auto;
 
+
     @include tablet{
+
       margin-top: 0;
+
       display: flex;
+
     }
+
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
