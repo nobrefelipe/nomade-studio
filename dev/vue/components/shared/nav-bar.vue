@@ -77,7 +77,7 @@
 <script lang="js">
 
   export default  {
-    name: 'nav-bar',
+    name: 'nav-trigger',
     props: [],
     mounted() {
 

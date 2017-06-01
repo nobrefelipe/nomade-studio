@@ -15,16 +15,7 @@
     </router-link>
 
 
-
-    <div class="menuOpener" @click="openNav($event)">
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <div>MENU</div>
-
-    </div>
+    <nav-trigger></nav-trigger>
 
 
     <!-- SOCIAL NAV -->
@@ -49,10 +40,7 @@
     </nav>
 
 
-
-
   </section>
-
 
 
 </template>
@@ -61,39 +49,18 @@
 
 <script lang="js">
 
+  import NavTrigger from './nav-trigger';
+
   export default  {
 
     name: 'left-bar',
 
-    props: [],
+    components:{
 
-    mounted() {
-
-    },
-
-    data() {
-
-      return {
-
-      }
+      NavTrigger
 
     },
 
-    methods: {
+  }
 
-      openNav(e){
-
-        let navBar = this.$el;
-
-        navBar.classList.toggle('menu-is-opened');
-
-      }
-
-    },
-
-    computed: {
-
-    }
-
-}
 </script>
