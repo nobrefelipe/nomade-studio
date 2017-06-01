@@ -1,4 +1,4 @@
-.navBar {
+.leftBar {
 
   position: fixed;
 
@@ -22,30 +22,20 @@
 
   align-items: flex-start;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   flex-wrap: wrap;
 
+  transition: all .5s cubic-bezier(.51,.09,.42,.93) .3s;
 
-  @include tablet{
-
-    width: 100vw;
-
-    height: 150px;
-
-    padding-top: 10px;
-
-  }
+  //overflow: hidden;
 
 
-  @include mobile{
+  &.menu-is-opened{
 
-    height: 120px;
-
-    justify-content: flex-start;
+    width: 350px;
 
   }
-
 
   &-bottom{
 
@@ -62,4 +52,31 @@
 
   }
 
+
+
+  @include mobile{
+
+    width: 100vw;
+
+    height: 50px;
+
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+    border-right: 0;
+
+    padding: 5px;
+
+
+    &.menu-is-opened{
+
+      width: 100vw;
+
+      height: 300px;
+
+    }
+
+  }
+
 }
+
+

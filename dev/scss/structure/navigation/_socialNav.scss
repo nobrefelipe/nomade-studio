@@ -6,9 +6,9 @@
 
   display: flex;
 
-  align-items: center;
+  align-items: flex-start;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   flex-direction: column;
 
@@ -33,22 +33,18 @@
   }
 
 
-  @include tablet{
+
+  @include mobile{
 
     position: fixed;
 
-    top:10px;
+    top: 5px;
 
     right: 5px;
 
     width: auto;
 
-  }
-
-
-  @include mobile{
-
-    top: 15px;
+    flex-direction: row;
 
     svg{
 

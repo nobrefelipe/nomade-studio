@@ -22,9 +22,19 @@
 
       openNav(e){
 
-        let navBar = this.$el.parentNode;
+        let navBar = document.querySelectorAll('.leftBar')[0];
 
-        navBar.classList.toggle('menu-is-opened');
+        if(navBar.classList.contains("menu-is-opened")){
+
+          navBar.classList.remove('menu-is-opened');
+
+        }else{
+
+          navBar.classList.add('menu-is-opened');
+
+        }
+
+
 
       }
 
@@ -40,13 +50,15 @@
 
   .navTrigger{
 
-    position: relative;
+    position: fixed;
 
-    margin-top: auto;
+    top: 50%;
 
-    margin-bottom: auto;
+    left: 30px;
 
-    margin-right: -35px;
+    z-index: 1000;
+
+    transform: translateY(-50%);
 
     cursor: pointer;
 
@@ -73,6 +85,8 @@
 
       transition: all .3s ease-in;
 
+      transition-delay: .2s;
+
     }
 
 
@@ -82,11 +96,13 @@
 
       right: 0;
 
-      height: 3px;
+      height: 2px;
 
       background: $grey;
 
-      transition: all .3s ease-in;
+      transition: all .3s cubic-bezier(.41,1.63,.56,1.17);
+
+      transition-delay: .2s;
 
       &:first-of-type{
 
@@ -128,20 +144,21 @@
 
     .menu-is-opened &{
 
-      margin-right: 5px;
-
-
       div{
 
         right: -21px;
 
         color: $pink;
 
+        transition-delay: 0s;
+
       }
 
       span{
 
         background: $pink;
+
+        transition-delay: 0s;
 
         &:first-of-type{
 
@@ -178,6 +195,17 @@
 
 
     }//.menu-is-opened
+
+
+    @media (max-width:667px) {
+
+      top: 20px;
+
+      left: 50%;
+
+      transform: translateX(-63%) rotate(90deg);
+
+    }
 
 
   }

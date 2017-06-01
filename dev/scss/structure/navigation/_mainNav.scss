@@ -1,21 +1,32 @@
 /* MAIN NAV*/
 .mainNav{
 
-  float: left;
+  float: right;
 
-  width: 100%;
+  min-width: 100%;
 
   display: flex;
 
   flex-direction: column;
 
-  align-items: center;
+  align-items: flex-end;
 
   justify-content: center;
 
   margin-top: auto;
 
   margin-bottom: auto;
+
+  overflow: hidden;
+
+  max-height: 0;
+
+
+  .menu-is-opened &{
+
+   max-height: 400px;
+
+  }
 
 
   a{
@@ -26,35 +37,17 @@
 
     text-transform: uppercase;
 
-  }
+    filter: blur(4px);
 
+    opacity: 0;
 
-  @include tablet{
+    .menu-is-opened &{
 
-    width: auto;
+      opacity: 1;
 
-    overflow: auto;
+      filter: blur(0);
 
-    margin: 0;
-
-    flex-direction: row;
-
-    justify-content: space-between;
-
-
-    a{
-
-      display: inline-table !important;
-
-      font-family: Roboto;
-
-      font-size: 16px;
-
-      line-height: 15px;
-
-      text-transform: lowercase;
-
-      padding: 15px;
+      transition-delay: .6s;
 
     }
 
@@ -63,7 +56,9 @@
 
   @include mobile{
 
-    width: 100%;
+    min-width: 100%;
+
+    align-items: center;
 
   }
 

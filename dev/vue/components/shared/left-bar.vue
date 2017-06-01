@@ -1,7 +1,9 @@
+
 <template lang="html">
 
 
-  <section class="navBar">
+  <section class="leftBar">
+
 
     <!-- LOGO -->
     <router-link to="/" id="logo">
@@ -15,10 +17,25 @@
     </router-link>
 
 
+    <!-- NAV ICON -->
     <nav-trigger></nav-trigger>
 
 
-    <!-- SOCIAL NAV -->
+    <!-- MAIN NAV -->
+    <nav class="mainNav">
+
+      <router-link to="/photography" title="PHOTOGRAPHY" @click.native="onNavigate()">photography</router-link>
+
+      <router-link to="/web-development" title="WEB DEVELOPMENT" @click.native="onNavigate()">web development</router-link>
+
+      <a href="mailto:felipe@nomade.studio" title="HIRE ME" @click.native="onNavigate()">hire me</a>
+
+      <router-link to="/about" title="ABOUT ME" @click.native="onNavigate()">about</router-link>
+
+    </nav>
+
+
+    <!-- SOCIAL-->
     <nav class="socialNav">
 
       <a href="https://github.com/nobrefelipe" title="GITHUB" target="_blank">
@@ -60,6 +77,16 @@
       NavTrigger
 
     },
+
+    methods:{
+
+      onNavigate(){
+
+        this.$el.classList.remove('menu-is-opened');
+
+      }
+
+    }
 
   }
 

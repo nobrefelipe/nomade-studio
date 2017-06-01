@@ -3,17 +3,6 @@
 
   <section class="navBar">
 
-    <!-- LOGO -->
-    <router-link to="/" id="logo">
-
-      <svg role="img" title="SN">
-       <use xlink:href="./static/svg/svgstore.svg#logo"/>
-      </svg>
-
-      <span> &lt;studio-nomade/&gt; </span>
-
-    </router-link>
-
 
     <!-- MAIN NAV -->
     <nav class="mainNav">
@@ -23,9 +12,9 @@
       <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
 
-      <router-link to="/about" title="ABOUT ME" class="is-only__small">about</router-link>
+      <router-link to="/about" title="ABOUT ME">about</router-link>
 
-      <a href="mailto:felipe@nomade.studio" title="HIRE ME"  class="is-only__small">hire me</a>
+      <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>
 
     </nav>
 
