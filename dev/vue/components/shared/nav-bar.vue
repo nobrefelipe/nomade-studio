@@ -15,17 +15,16 @@
     </router-link>
 
 
-
-
-
     <!-- MAIN NAV -->
     <nav class="mainNav">
 
       <router-link to="/photography" title="PHOTOGRAPHY">photography</router-link>
+
       <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
 
       <router-link to="/about" title="ABOUT ME" class="is-only__small">about</router-link>
+
       <a href="mailto:felipe@nomade.studio" title="HIRE ME"  class="is-only__small">hire me</a>
 
     </nav>
@@ -38,6 +37,7 @@
       <nav class="secondaryNav is-hidden__small">
 
         <router-link to="/about" title="ABOUT ME">about</router-link>
+
         <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>
 
       </nav>

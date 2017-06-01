@@ -2,7 +2,7 @@
 
   <div id="app">
 
-   <nav-bar></nav-bar>
+    <left-bar></left-bar>
 
     <router-view></router-view>
 
@@ -12,29 +12,14 @@
 
 <script>
 
-import NavBar from './components/shared/nav-bar';
+import LeftBar from './components/shared/left-bar';
 
 export default {
 
   name: 'app',
 
-  components: { NavBar }
+  components: { LeftBar }
 
 }
 
 </script>
-
-<style>
-
-#app {
-
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-
-}
-
-</style>
