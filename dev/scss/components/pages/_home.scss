@@ -1,0 +1,151 @@
+.home {
+
+  width: 100vw;
+
+  height: 100vh;
+
+  padding-left: 80px;
+
+
+  &-left,
+  &-right{
+
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+
+    height: 100%;
+
+  }
+
+
+  &-left{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    padding: 40px;
+
+  }
+
+
+  &-right{
+
+    background: $grey;
+
+    padding: 40px 40px 120px 40px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+
+    p{
+
+      font-weight: 100;
+
+    }
+
+
+    svg{
+
+      position: absolute;
+
+      left: 0;
+
+      top: 120px;
+
+      transform: translateX(-38%);
+
+      height: 240px;
+
+
+      @include tabletLandscape{
+
+        height: 120px;
+
+        top: 40px;
+
+        transform: translateX(-43%);
+
+      }
+
+
+    }
+
+  }
+
+
+
+
+  .presentation{
+
+    width: 380px;
+
+    @include tabletLandscape{
+
+      width: 280px;
+
+    }
+
+
+  }
+
+
+  .introduction{
+
+    float: left;
+    width: 100%;
+
+    font-size: 22px;
+    font-weight: 400;
+
+  }
+
+  .name{
+
+    float: left;
+    width: 100%;
+
+    svg{
+
+      height: 80px;
+      width: 100%;
+
+    }
+
+  }
+
+
+  .what{
+
+    float: left;
+
+    width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    text-align: center;
+
+    color: rgba($grey, 0.7);
+
+    font-family: 'Vanadine';
+
+    padding: 5px 0 10px 0;
+
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+  }
+
+}

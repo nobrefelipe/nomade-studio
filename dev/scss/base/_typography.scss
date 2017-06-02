@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 @font-face {
   font-family: 'vanadine';
@@ -25,9 +25,16 @@ body{
 p{
 
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0 0 15px 0;
-  line-height: 30px;
+  line-height: 24px;
+
+
+  @include tabletLandscape{
+
+    font-size: 16px;
+
+  }
 
 }
 

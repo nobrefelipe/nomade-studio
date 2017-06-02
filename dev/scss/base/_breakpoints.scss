@@ -46,7 +46,7 @@
 
 /* Tablet Landscape */
 @mixin tabletLandscape {
-  @media (min-width:961px) and (max-width:1024px) {
+  @media (min-width:961px) and (max-width:1025px) {
     @content;
   }
 }
