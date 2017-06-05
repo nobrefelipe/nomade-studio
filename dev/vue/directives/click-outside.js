@@ -12,7 +12,7 @@ Vue.directive('click-outside', {
 
         var trigger = function (event) {
 
-            //check if user is clicking on the host element || any of its children
+            //check if user is not clicking on the host element || any of its children
             if (!(el == event.target || el.contains(event.target))) {
 
                 // FIRE IT!
