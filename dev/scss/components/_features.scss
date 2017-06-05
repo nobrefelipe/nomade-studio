@@ -6,12 +6,81 @@
 
   padding: 40px 0;
 
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
 
   &-item{
 
     float: left;
 
-    width: 25%;
+    margin-bottom: 50px;
+
+
+    @include desktop_ultraHD{
+
+      width: calc(20% - 30px);
+
+      &:not(:nth-of-type(5n)){
+
+        margin-right: 40px;
+
+      }
+
+    }
+
+    @include desktop_HD{
+
+      width: calc(25% - 30px);
+
+      &:not(:nth-of-type(4n)){
+
+        margin-right: 40px;
+
+      }
+
+    }
+
+    @include tabletLandscape{
+
+      width: calc(33% - 30px);
+
+      &:not(:nth-of-type(3n)){
+
+        margin-right: 40px;
+
+      }
+
+    }
+
+    @include tabletPortrait{
+
+      width: calc(50% - 10px);
+
+      &:not(:nth-of-type(2n)){
+
+        margin-right: 20px;
+
+      }
+
+    }
+
+    @include mobilePortrait{
+
+      width: 100%;
+
+      margin-right: 0;
+
+      p{text-align: center;}
+
+    }
+
+
 
 
     div{
@@ -22,37 +91,71 @@
 
       width: 100%;
 
+      margin-bottom: 15px;
+
       display: flex;
 
       align-items: center;
 
-      justify-content: center;
+      justify-content: flex-start;
+
+
+
+      @include mobilePortrait{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+      }
 
     }
 
 
-    img{
+    svg{
 
       float: left;
 
-      width: 70%;
+      height: 40px;
 
-      opacity: 0.07;
+      width: 40px;
 
-      margin: 0 15%;
+      opacity: 1;
+
+      margin: 0;
+
+      &[title="collaboration"]{
+
+        path{
+
+          fill: none;
+
+          stroke: $pink;
+
+        }
+
+      }
+
+      path{
+
+        fill: $pink;
+
+      }
+
+      @include mobilePortrait{
+
+        margin-bottom: 20px;
+
+      }
 
     }
 
 
     p{
 
-      position: absolute;
-
-      top: 50%;
-
-      left: 50%;
-
-      transform: translate(-50%,-50%);
+      float: left;
 
       width: 100%;
 
@@ -60,7 +163,7 @@
 
       padding: 0;
 
-      text-align: center;
+      text-align: justify;
 
       font-size: 16px;
 
@@ -71,11 +174,10 @@
 
       float: left;
 
-      width: 100%;
-
-      margin-top: 20px;
+      margin: 0 0 0 15px;
 
       text-align: center;
+
 
     }
 

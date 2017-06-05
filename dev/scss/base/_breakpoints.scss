@@ -60,6 +60,23 @@
 
 
 
+/* HD */
+@mixin desktop_HD {
+  @media (min-width:1025px) and (max-width:3024px) {
+    @content;
+  }
+}
+
+
+/* Ultra HD */
+@mixin desktop_ultraHD {
+  @media (min-width: 3025px) {
+    @content;
+  }
+}
+
+
+
 ///////////////////////////////////////////////
 /////// ====== DEVICE SPECIFICs ======/////////
 ///////////////////////////////////////////////

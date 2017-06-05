@@ -4,34 +4,56 @@
 
   <p class="is-text-center">
 
-    Burgeoning screens mean the distance between the navbar and our thumbs has grown. <br>
-    The screen on a 7 Plus is so tall it would take a thumb-length increase of 150 percent to reach those pesky buttons with one hand. <br>
-    Just another knuckle or two. Nothing weird.
+    I have been developing websites sice 2011, when I first jump into a Front End Developer Intership in Milan, Italy<br>
+
+    After 2 months of watching tutorials and reading articles I passed from ‘knowing nothing’  to  ‘have some idea’ about web development.<br>
+
+    But that was enought for the guys from More Interactive to give me a try :)<br><br>
+
+    Since that I keep learning as much as I can. It’s been 7 years of great opportunities, great people <br>
+
+    and amazing projects from Agencies in Milan to a Startup in London and from Contracts in Thailand to Remotes in Europe.<br><br>
+
+    My main skills are:
 
   </p>
+  
+  
+  <ul class="skills-icons is-flexy is-center">
+    
+    <li><img src="static/img/html5-icon.png"     alt="HTML 5"></li>
+    <li><img src="static/img/css3-icon.png"      alt="CSS 3"></li>
+    <li><img src="static/img/js-icon.png"        alt="JAVASCRIPT"></li>
+    <li><img src="static/img/vuejs-icon.png"     alt="VUE JS"></li>
+    <li><img src="static/img/wordpress-icon.png" alt="WORDPRESS"></li>
 
-  <!--<blockquote>-->
+  </ul>
 
-    <!--Burgeoning screens mean the distance between the navbar and our thumbs has grown. <br>-->
-    <!--The screen on a 7 Plus is so tall it would take-->
+  <blockquote>
 
-  <!--</blockquote>-->
+    Working as a freelancer is not just about the coding. <br>
+    I understand the challenges of working remotely on client projects.<br>
+    Here’s a couple of things I think I’m good at:
+
+  </blockquote>
 
 
 
   <div class="features">
 
-    <div class="features-item">
+    <div v-for="item in features" class="features-item">
 
       <div>
 
-        <img src="static/img/icontest.png" alt="">
+        <svg role="img" :title="item.name">
+          <use :xlink:href="'./static/svg/svgstore.svg#' + item.name"/>
+        </svg>
 
-        <p>This guide is very easy to grasp, even for a beginner likes me. Thanks for this gem</p>
+        <h5>{{ item.name }}</h5>
 
       </div>
 
-      <h5>Management</h5>
+      <p v-html="item.description"></p>
 
     </div>
 

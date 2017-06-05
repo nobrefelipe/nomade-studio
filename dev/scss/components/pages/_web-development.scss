@@ -1,5 +1,35 @@
 .web-development{
 
+  .skills-icons{
 
+    float: left;
+
+    width: 100%;
+
+    margin: 20px 0;
+
+    li{
+
+      padding: 10px 30px;
+
+
+      img{
+
+        display: block;
+
+        height: 80px;
+
+
+        @include mobile{
+
+          height: 60px;
+
+        }
+
+      }
+
+    }
+
+  }
 
 }

@@ -19,7 +19,13 @@
 
   overflow: hidden;
 
-  max-height: 0;
+
+  // mate sure we hide the menu
+  @include tablet{
+
+    max-height: 0;
+
+  }
 
 
   .menu-is-opened &{
@@ -47,7 +53,8 @@
 
       filter: blur(0);
 
-      transition-delay: .6s;
+      transition: opacity .3s ease-in .6s, blur .3s ease-in .6s, color .3s ease-in 0s;
+
 
     }
 
