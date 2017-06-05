@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <div class="navTrigger" @click="openNav($event)">
+  <div class="navTrigger" @click="openNav">
 
     <span></span> <span></span> <span></span>
 
@@ -20,19 +20,11 @@
 
     methods: {
 
-      openNav(e){
+      openNav(){
 
         let navBar = document.querySelectorAll('.leftBar')[0];
 
-        if(navBar.classList.contains("menu-is-opened")){
-
-          navBar.classList.remove('menu-is-opened');
-
-        }else{
-
-          navBar.classList.add('menu-is-opened');
-
-        }
+        navBar.classList.toggle("menu-is-opened")
 
       }
 
