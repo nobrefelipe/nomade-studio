@@ -12,7 +12,7 @@
 
 
 
-<script lang="js">
+<script>
 
   export default  {
 
@@ -33,8 +33,6 @@
           navBar.classList.add('menu-is-opened');
 
         }
-
-
 
       }
 

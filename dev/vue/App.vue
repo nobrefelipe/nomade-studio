@@ -2,7 +2,7 @@
 
   <div id="app">
 
-    <left-bar></left-bar>
+    <left-bar v-click-outside="closeNav"></left-bar>
 
    <transition mode="out-in" :name="mainTransition">
 
@@ -27,23 +27,41 @@ export default {
   data(){
     return{
 
-        mainTransition: 'fade'
+        mainTransition: 'fade',
 
     }
   },
 
+
   watch: {
 
+    // LETS WATCH FOR ROUTE CHANGES
     '$route' (to, from) {
 
-      console.log(from.name)
-
-      let setTransition = '';
-
+      //If exiting Home Page, use its own page transition
       if( from.name == 'Home'){  this.mainTransition = 'from-home';}
 
+      //Otherwise use fade in/out
       else{ this.mainTransition = 'fade'; }
 
+    }
+
+  },
+
+
+  methods:{
+
+
+    // WILL CLOSE THE NAVIGATION IF USER CLICKS OUTSIDE IT
+    closeNav(){
+
+        let navBar = document.querySelectorAll('.leftBar')[0];
+
+        if(navBar.classList.contains("menu-is-opened")){
+
+          navBar.classList.remove('menu-is-opened');
+
+        }
 
     }
 

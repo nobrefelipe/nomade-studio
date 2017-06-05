@@ -2,6 +2,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import ClickOutside from './directives/click-outside';
 
 
 Vue.config.productionTip = false;
@@ -12,7 +13,11 @@ new Vue({
 
   router,
 
-  directives:{},
+  directives:{
+
+    ClickOutside
+
+  },
 
   template: '<App/>',
 

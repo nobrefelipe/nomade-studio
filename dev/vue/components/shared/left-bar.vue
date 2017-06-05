@@ -22,15 +22,15 @@
 
 
     <!-- MAIN NAV -->
-    <nav class="mainNav">
+    <nav class="mainNav" @click="onNavigate($event)">
 
-      <router-link to="/photography" title="PHOTOGRAPHY" @click.native="onNavigate()">photography</router-link>
+      <router-link to="/photography" title="PHOTOGRAPHY">photography</router-link>
 
-      <router-link to="/web-development" title="WEB DEVELOPMENT" @click.native="onNavigate()">web development</router-link>
+      <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
-      <a href="mailto:felipe@nomade.studio" title="HIRE ME" @click.native="onNavigate()">hire me</a>
+      <router-link to="/about" title="ABOUT ME">about me</router-link>
 
-      <router-link to="/about" title="ABOUT ME" @click.native="onNavigate()">about</router-link>
+      <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>
 
     </nav>
 
@@ -64,7 +64,7 @@
 
 
 
-<script lang="js">
+<script>
 
   import NavTrigger from './nav-trigger';
 
@@ -80,9 +80,18 @@
 
     methods:{
 
-      onNavigate(){
+      /*
+        DOM Event Delegation
+        CLOSE THE NAVIGATION BAR IF USER CLICKS ON LINK ITEMS
+      */
+      onNavigate(e){
 
-        this.$el.classList.remove('menu-is-opened');
+        // make sure the user clicks on <a> tag
+        if(e.target && e.target.nodeName == "A"){
+
+            this.$el.classList.remove('menu-is-opened');
+
+        }
 
       }
 
