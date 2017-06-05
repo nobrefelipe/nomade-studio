@@ -1,6 +1,8 @@
 # Studio Nômade
 
-> Studio Nômade Website
+> ...in progress...
+
+New Studio Nômade Website, built with Vue.js and Wordpress
 
 ## Build Setup
 
