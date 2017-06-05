@@ -197,7 +197,7 @@
     }//.menu-is-opened
 
 
-    @media (max-width:667px) {
+    @media (max-width:960px) {
 
       top: 20px;
 

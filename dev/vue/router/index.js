@@ -4,6 +4,8 @@ import Router from 'vue-router';
 
 
 import Home from '../components/pages/home/index.vue';
+import Photography from '../components/pages/photography/index.vue';
+import WebDevelopment from '../components/pages/web-development/index.vue';
 
 Vue.use(Router);
 
@@ -18,6 +20,22 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+
+    },
+
+    {
+
+      path: '/photography',
+      name: 'photography',
+      component: Photography
+
+    },
+
+    {
+
+      path: '/web-development',
+      name: 'web-development',
+      component: WebDevelopment
 
     }
 

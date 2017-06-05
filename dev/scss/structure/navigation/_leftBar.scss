@@ -1,5 +1,7 @@
 .leftBar {
 
+  float: left;
+
   position: fixed;
 
   left: 0;
@@ -35,6 +37,18 @@
 
     width: 350px;
 
+    //& + .home{
+    //
+    //  transform: translateX(350px);
+    //
+    //  @include tablet{
+    //
+    //    transform: translateY(250px);
+    //
+    //  }
+    //
+    //}
+
   }
 
   &-bottom{
@@ -54,7 +68,7 @@
 
 
 
-  @include mobile{
+  @include tablet{
 
     width: 100vw;
 

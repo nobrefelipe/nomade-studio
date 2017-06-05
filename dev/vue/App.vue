@@ -4,7 +4,11 @@
 
     <left-bar></left-bar>
 
-    <router-view></router-view>
+   <transition mode="out-in" :name="mainTransition">
+
+       <router-view></router-view>
+
+   </transition>
 
   </div>
 
@@ -18,7 +22,32 @@ export default {
 
   name: 'app',
 
-  components: { LeftBar }
+  components: { LeftBar },
+
+  data(){
+    return{
+
+        mainTransition: 'fade'
+
+    }
+  },
+
+  watch: {
+
+    '$route' (to, from) {
+
+      console.log(from.name)
+
+      let setTransition = '';
+
+      if( from.name == 'Home'){  this.mainTransition = 'from-home';}
+
+      else{ this.mainTransition = 'fade'; }
+
+
+    }
+
+  }
 
 }
 
