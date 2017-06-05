@@ -17,16 +17,12 @@ var gulp = require('gulp'),
   paths = {
     js: {
       src: 'dev/js',
-      dest: 'dist/js',
+      dest: 'static/js',
       bower: 'bower_components'
     },
     css: {
       src: 'dev/scss',
-      dest: 'static/'
-    },
-    images: {
-      src: 'dev/img',
-      dest: 'static/img'
+      dest: 'static/css'
     },
     svgs: {
       src: 'dev/svg',

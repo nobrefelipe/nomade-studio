@@ -2,7 +2,7 @@
 <template lang="html">
 
 
-  <section class="leftBar">
+  <section class="leftBar" ref="leftBar">
 
 
     <!-- LOGO -->
@@ -77,6 +77,7 @@
       NavTrigger
 
     },
+
 
     methods:{
 
