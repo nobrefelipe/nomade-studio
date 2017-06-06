@@ -24,6 +24,7 @@ Vue.directive('click-outside', {
 
         // WATCH FOR CLICKING AROUND
         document.body.addEventListener('click', trigger);
+        document.body.addEventListener('touchstart', trigger);
 
     },
 
@@ -32,6 +33,7 @@ Vue.directive('click-outside', {
 
         //STOP WATCHING IT! #perfomanceMatters
         document.body.removeEventListener('click', trigger);
+        document.body.removeEventListener('touchstart', trigger);
 
     }
 

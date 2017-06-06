@@ -13,6 +13,13 @@
       padding: 10px 30px;
 
 
+      @include mobile{
+
+        padding: 16px;
+
+      }
+
+
       img{
 
         display: block;
@@ -22,9 +29,10 @@
 
         @include mobile{
 
-          height: 60px;
+          height: 40px;
 
         }
+
 
       }
 

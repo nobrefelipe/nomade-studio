@@ -32,7 +32,6 @@ export default {
     }
   },
 
-
   watch: {
 
     // LETS WATCH FOR ROUTE CHANGES

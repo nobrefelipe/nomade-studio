@@ -76,10 +76,7 @@
 
       margin-right: 0;
 
-      p{text-align: center;}
-
     }
-
 
 
 
@@ -167,6 +164,12 @@
 
       font-size: 16px;
 
+      @include mobilePortrait{
+
+        text-align: center;
+
+      }
+
     }
 
 
@@ -177,6 +180,14 @@
       margin: 0 0 0 15px;
 
       text-align: center;
+
+      text-transform: capitalize;
+
+      @include mobilePortrait{
+
+        margin-left: 0;
+
+      }
 
 
     }
