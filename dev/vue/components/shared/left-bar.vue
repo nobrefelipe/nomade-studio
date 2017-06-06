@@ -2,7 +2,7 @@
 <template lang="html">
 
 
-  <section class="leftBar" ref="leftBar">
+  <section id="leftBar" class="leftBar">
 
 
     <!-- LOGO -->

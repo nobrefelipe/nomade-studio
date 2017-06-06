@@ -22,7 +22,7 @@
 
       openNav(){
 
-        let navBar = document.querySelectorAll('.leftBar')[0];
+        let navBar = document.getElementById('leftBar');
 
         navBar.classList.toggle("menu-is-opened")
 

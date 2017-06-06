@@ -4,11 +4,11 @@
 
     <left-bar v-click-outside="closeNav"></left-bar>
 
-   <transition mode="out-in" :name="mainTransition">
+    <transition mode="out-in" :name="mainTransition">
 
        <router-view></router-view>
 
-   </transition>
+    </transition>
 
   </div>
 
@@ -54,7 +54,7 @@ export default {
     // WILL CLOSE THE NAVIGATION IF USER CLICKS OUTSIDE IT
     closeNav(){
 
-        let navBar = document.querySelectorAll('.leftBar')[0];
+        let navBar = document.getElementById('leftBar');
 
         if(navBar.classList.contains("menu-is-opened")){
 
