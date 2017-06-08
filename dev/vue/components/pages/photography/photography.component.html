@@ -8,6 +8,8 @@
 
     <ul class="filter-items" @click="onFilter($event)">
 
+      <li>all</li>
+
       <li>street</li>
 
       <li>people</li>
@@ -26,10 +28,10 @@
   <div class="gallery">
 
 
-    <div v-for="item in final_data" class="gallery-item is-flexy">
+    <div v-for="item in final_data" class="gallery-item">
 
 
-      <div class="is-flexy is-column is-bottom is-right">
+      <div class="caption">
 
         <h5>{{ item.title }}</h5>
 
@@ -38,19 +40,14 @@
       </div>
 
 
-      <div class="gallery-item-img">
+      <div class="img" >
 
-        <img  :alt=" item.title "
-              v-lazy="item.image"
-              sizes="100vw">
+        <img  :alt="item.title" v-lazy="item.image" sizes="100vw" v-parallax="0.1">
 
       </div>
 
 
-
-
     </div>
-
 
 
   </div>

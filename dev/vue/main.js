@@ -1,19 +1,28 @@
 
+/* DEFAULTS */
 import Vue from 'vue';
 import Vuex from 'vuex';
 import App from './App';
 import router from './router';
 import store from './store/store';
+
+
+/* MY OWN DIRECTIVES */
 import ClickOutside from './directives/click-outside';
+
+
+
+/* INSTALLED DIRECTIVES */
 import VueLazyload from 'vue-lazyload';
+import VueParallaxJs from 'vue-parallax-js';
 
 
+
+/* INIT */
 Vue.use(Vuex);
+Vue.use(VueParallaxJs);
 
-
-/*
-  VUE LAZYLOAD OPTION
-*/
+//vue lazyload options
 Vue.use(VueLazyload, {
 
   preLoad: 1.3,
@@ -24,9 +33,6 @@ Vue.use(VueLazyload, {
 
 });
 
-
-
-Vue.config.productionTip = false;
 
 new Vue({
 

@@ -1,4 +1,3 @@
-
 export default  {
 
   name: 'photography',
@@ -11,7 +10,6 @@ export default  {
 
     }
 
-
   },
 
 
@@ -20,20 +18,21 @@ export default  {
 
       showFilter: false,
 
-      filter: "all",
+      activeFilter: "all",
 
       allPics: this.$store.state.photography,
 
       filtered: []
 
     }
+
   },
 
 
   mounted(){
 
     // initial state, get all items
-    this.filtered =  (this.filter == "all") ? this.allPics : [];
+    this.filtered =  (this.activeFilter == "all") ? this.allPics : [];
 
   },
 
@@ -64,10 +63,15 @@ export default  {
       //make sure the user clicks on <LI> tag
       if(e.target && e.target.nodeName == "LI"){
 
-        this.filter = e.target.innerText.toLowerCase();
+        // get the inner text value and set the active filter
+        this.activeFilter = e.target.innerText.toLowerCase();
 
         // filter it!
         this.filterPics();
+
+
+        // hide filters
+        this.showFilter = false;
 
       }
 
@@ -84,8 +88,15 @@ export default  {
 
       for( let p of this.allPics){
 
-        // this.filter get its value from onFilter()
-        if(p.tags.includes(this.filter)) {
+
+        if(this.activeFilter == "all"){
+
+          this.filtered.push(p);
+
+        }
+
+        // activeFilter get its value after onFilter()
+        if(p.tags.includes(this.activeFilter)) {
 
           // generate the filtered array
           this.filtered.push(p)
