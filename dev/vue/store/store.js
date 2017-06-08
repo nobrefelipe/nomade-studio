@@ -65,6 +65,29 @@ export default new Vuex.Store({
                 description: "Often overlooked, I think it’s incredibly important to leave clients with a clear picture of what’s been done for the next round of development.",
 
             }
+        ],
+
+
+        photography: [
+
+            [{
+                title: "the old man",
+                description: "the old man description",
+                tags: ["portrait", "street", "people"]
+            }],
+
+            [{
+                title: "the girl",
+                description: "the girl description",
+                tags: ["portrait", "people"]
+            }],
+
+            [{
+                title: "the boat",
+                description: "the boat description",
+                tags: ["street", "people"]
+            }]
+
         ]
 
     }

@@ -1,0 +1,109 @@
+.filter{
+
+  position: absolute;
+
+  top: 27px;
+
+  left: 90px;
+
+  display: flex;
+
+
+  &.show-filters{
+
+    .filter-icon{
+
+      path{
+
+        fill: $pink;
+
+      }
+
+    }
+
+    .filter-items{
+
+      li{
+
+        filter: blur(0px);
+
+        opacity: 1;
+
+        cursor: pointer;
+
+      }
+
+    }
+
+  }
+
+
+  &-icon{
+
+    width: 20px;
+
+    height: 25px;
+
+    cursor: pointer;
+
+
+    &:hover{
+
+      path{
+
+        fill: $pink;
+
+      }
+
+    }
+
+  }
+
+
+  &-items{
+
+    float: left;
+
+    margin-left: 20px;
+
+    margin-top: -3px;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: flex-start;
+
+
+
+    li{
+
+      font-family: 'Vanadine';
+
+      font-size: 20px;
+
+      line-height: 20px;
+
+      text-transform: uppercase;
+
+      padding: 0 20px;
+
+      transition: all .3s ease-in;
+
+      filter: blur(10px);
+
+      opacity: 0;
+
+
+      &:hover{
+
+        color: $pink;
+
+      }
+
+    }
+
+  }
+
+
+}

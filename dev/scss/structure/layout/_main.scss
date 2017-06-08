@@ -13,7 +13,16 @@
 }
 
 
+body{
+
+  background: #F5F5F5;
+
+}
+
+
 .view{
+
+  float: left;
 
   min-height: 100vh;
 
@@ -22,6 +31,8 @@
   transition: all 0.5s ease;
 
   padding: 60px 20px 80px 160px;
+
+  background: #F5F5F5;
 
 
   p{

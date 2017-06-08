@@ -1,0 +1,104 @@
+.photography{
+
+
+  .gallery{
+
+    float: left;
+
+    width: 100%;
+
+
+    &-item{
+
+      float: left;
+
+      width: 100%;
+
+      margin-bottom: 40px;
+
+
+      &.is-reverse{
+
+
+        > div{
+
+          &:first-child{
+
+            padding-left: 20px;
+
+            padding-right: 0;
+
+          }
+
+          &:last-child{
+
+            padding-right: 20px;
+
+            padding-left: 0;
+
+          }
+
+        }
+
+      }
+
+      > div{
+
+        float: left;
+
+        &:not(.is-full){
+
+          width: 50%;
+
+        }
+
+        &:first-child{
+
+          padding-right: 20px;
+
+        }
+
+        &:last-child{
+
+          padding-left: 20px;
+
+        }
+
+      }
+
+
+      .is-full{
+
+        img{
+
+          padding: 0 20%;
+
+        }
+      }
+
+
+      img{
+
+        width: 100%;
+
+      }
+
+      p{
+
+        margin: 10px 0 0 0;
+
+        font-size: 14px;
+
+        line-height: 18px;
+
+      }
+
+
+    }
+
+
+  }
+
+
+
+}
