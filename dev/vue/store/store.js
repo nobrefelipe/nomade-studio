@@ -70,23 +70,62 @@ export default new Vuex.Store({
 
         photography: [
 
-            [{
+            {
+                title: "the vietnamese girl",
+                description: "the vietnamese girl description",
+                image: "https://drscdn.500px.org/photo/156654925/q%3D80_m%3D2000/90686243382daf4ac0f4cd51e4b43442",
+                tags: ["portrait", "people"]
+            },
+
+            {
+                title: "paddling in the light",
+                description: "paddling in the light description",
+                image: "https://drscdn.500px.org/photo/155602957/q%3D80_m%3D2000/db87548747518b05cebc2041c74dbdf9",
+                tags: ["people", "black and white"]
+            },
+
+            {
+                title: "thoughts",
+                description: "thoughts description",
+                image: "https://drscdn.500px.org/photo/155392829/q%3D80_m%3D2000/7c41b24d95ea0d8ffe0c233928a166d9",
+                tags: ["people", "black and white"]
+            },
+
+            {
                 title: "the old man",
                 description: "the old man description",
-                tags: ["portrait", "street", "people"]
-            }],
+                image: "https://drscdn.500px.org/photo/155389821/q%3D80_m%3D2000/74786dc988916d97a2dd583061b20027",
+                tags: ["people"]
+            },
 
-            [{
-                title: "the girl",
-                description: "the girl description",
-                tags: ["portrait", "people"]
-            }],
+            {
+                title: "heading the infinity",
+                description: "heading the infinity description",
+                image: "https://drscdn.500px.org/photo/155389827/q%3D80_m%3D1500/f07f66ead5a96f3866470210008faab6",
+                tags: ["people"]
+            },
 
-            [{
-                title: "the boat",
-                description: "the boat description",
-                tags: ["street", "people"]
-            }]
+            {
+                title: "desolation",
+                description: "desolation description",
+                image: "https://drscdn.500px.org/photo/147856551/q%3D80_m%3D2000/0daec028eb3d4deb605d8f90d930a570",
+                tags: ["landscape", "nature"]
+            },
+
+            {
+                title: "the sunset boat",
+                description: "the sunset boat description",
+                image: "https://drscdn.500px.org/photo/147717849/q%3D80_m%3D2000/9a1e76a8d88779d17999e6e88b690fca",
+                tags: ["landscape", "nature"]
+            },
+
+            {
+                title: "abandoned pier",
+                description: "abandoned pier description",
+                image: "https://drscdn.500px.org/photo/146396817/q%3D80_m%3D2000/c69c976886aa4a5b881b91ca31c0abb7",
+                tags: ["landscape", "nature"]
+            },
+
 
         ]
 

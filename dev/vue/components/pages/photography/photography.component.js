@@ -3,11 +3,15 @@ export default  {
 
   name: 'photography',
 
-  props: [],
+  filters:{
+
+    sanitize: function (value) {
+
+      return value.replace(/ /g,"-");
+
+    }
 
 
-  mounted() {
-    
   },
 
 
@@ -16,18 +20,34 @@ export default  {
 
       showFilter: false,
 
-      filter: "street",
+      filter: "all",
 
-      pics: this.$store.state.photography,
+      allPics: this.$store.state.photography,
 
       filtered: []
 
     }
   },
 
+
   mounted(){
 
-    this.filterPics()
+    // initial state, get all items
+    this.filtered =  (this.filter == "all") ? this.allPics : [];
+
+  },
+
+
+  computed:{
+
+    /*
+      USE COMPUTED PROPERTY TO KEEP THE REACTIVITY
+    */
+    final_data(){
+
+      return this.filtered;
+
+    }
 
   },
 
@@ -37,7 +57,7 @@ export default  {
 
     /*
       DOM Event Delegation
-      GET FILTER TO APPLY
+      APPLY FILTER BY CLICKING ON FILTER ITEM
     */
     onFilter(e){
 
@@ -46,6 +66,7 @@ export default  {
 
         this.filter = e.target.innerText.toLowerCase();
 
+        // filter it!
         this.filterPics();
 
       }
@@ -61,13 +82,13 @@ export default  {
       // clear filtered array
       this.filtered = [];
 
-      for( let p of this.pics){
+      for( let p of this.allPics){
 
         // this.filter get its value from onFilter()
-        if(p[0].tags.includes(this.filter)){
+        if(p.tags.includes(this.filter)) {
 
           // generate the filtered array
-          this.filtered.push(...p);
+          this.filtered.push(p)
 
         }
 

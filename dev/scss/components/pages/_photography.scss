@@ -8,6 +8,19 @@
     width: 100%;
 
 
+
+    //LAZY LOAD SPINNER
+    [lazy="loading"]{
+
+      background: #ccc;
+
+      padding: 30% 40%;
+
+      opacity: 0;
+
+    }
+
+
     &-item{
 
       float: left;
@@ -41,6 +54,7 @@
         }
 
       }
+
 
       > div{
 
@@ -80,6 +94,8 @@
       img{
 
         width: 100%;
+
+        transition: opacity .3s ease-in;
 
       }
 

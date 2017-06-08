@@ -26,8 +26,43 @@
   <div class="gallery">
 
 
+    <div v-for="item in final_data" class="gallery-item is-flexy">
 
-    <div class="gallery-item is-flexy">
+
+      <div class="is-flexy is-column is-bottom is-right">
+
+        <h5>{{ item.title }}</h5>
+
+        <p class="is-text-right" v-html="item.description"></p>
+
+      </div>
+
+
+      <div class="gallery-item-img">
+
+        <img  :alt=" item.title "
+              v-lazy="item.image"
+              sizes="100vw">
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+<!--
+
+ :src="'http://res.cloudinary.com/studio-nomade/image/upload/w_1000/' + item[0].title | sanitize "
+
+<div class="gallery-item is-flexy">
 
       <div class="is-flexy is-column is-bottom is-right">
 
@@ -155,10 +190,4 @@
 
     </div>
 
-
-
-
-  </div>
-
-</section>
-
+-->
