@@ -48,4 +48,16 @@ body{
 
   }
 
+
+  &.photography{
+
+    @include mobilePortrait{
+
+      padding: 120px 00px 40px;
+
+    }
+
+  }
+
+
 }

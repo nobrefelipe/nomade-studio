@@ -20,7 +20,7 @@ import VueParallaxJs from 'vue-parallax-js';
 
 /* INIT */
 Vue.use(Vuex);
-Vue.use(VueParallaxJs);
+Vue.use(VueParallaxJs, {minWidth: 500})
 
 //vue lazyload options
 Vue.use(VueLazyload, {

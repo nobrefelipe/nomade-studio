@@ -41,6 +41,7 @@ export default  {
 
     /*
       USE COMPUTED PROPERTY TO KEEP THE REACTIVITY
+      every time this.filtered change (by filtering) final_data will bee updated
     */
     final_data(){
 
@@ -68,6 +69,9 @@ export default  {
 
         // filter it!
         this.filterPics();
+
+
+        window.scrollTo(0, 0);
 
 
         // hide filters
