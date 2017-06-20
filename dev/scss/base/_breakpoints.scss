@@ -62,7 +62,7 @@
 
 /* HD */
 @mixin desktop_HD {
-  @media (min-width:1025px) and (max-width:3024px) {
+  @media (min-width:1441px) and (max-width:2220px) {
     @content;
   }
 }
@@ -70,7 +70,7 @@
 
 /* Ultra HD */
 @mixin desktop_ultraHD {
-  @media (min-width: 3025px) {
+  @media (min-width: 2220px) {
     @content;
   }
 }

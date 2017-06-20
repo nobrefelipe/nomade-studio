@@ -28,6 +28,8 @@
 
       <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
+      <router-link to="/web-development" title="WEB DEVELOPMENT">laboratory</router-link>
+
       <router-link to="/about" title="ABOUT ME">about me</router-link>
 
       <a href="mailto:felipe@nomade.studio" title="HIRE ME">hire me</a>

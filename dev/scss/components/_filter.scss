@@ -91,6 +91,10 @@
 
     align-items: flex-start;
 
+    @include mobile{
+      display: none !important;
+    }
+
 
 
     li{

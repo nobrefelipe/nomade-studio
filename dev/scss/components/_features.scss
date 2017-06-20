@@ -10,7 +10,7 @@
 
   align-items: flex-start;
 
-  justify-content: center;
+
 
   flex-wrap: wrap;
 
@@ -19,7 +19,7 @@
 
     float: left;
 
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
 
     @include desktop_ultraHD{
@@ -46,7 +46,8 @@
 
     }
 
-    @include tabletLandscape{
+
+    @include desktop{
 
       width: calc(33% - 50px);
 
@@ -58,19 +59,9 @@
 
     }
 
-    @include tabletPortrait{
 
-      width: calc(50% - 10px);
 
-      &:not(:nth-of-type(2n)){
-
-        margin-right: 20px;
-
-      }
-
-    }
-
-    @include mobilePortrait{
+    @include tablet{
 
       width: 100%;
 

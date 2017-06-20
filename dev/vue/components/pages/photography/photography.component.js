@@ -1,3 +1,10 @@
+import Vue from 'vue';
+
+import { Actionsheet } from 'mint-ui';
+
+Vue.component(Actionsheet.name, Actionsheet);
+
+
 export default  {
 
   name: 'photography',
@@ -16,13 +23,39 @@ export default  {
   data() {
     return {
 
+      sheetVisible: false,
+
       showFilter: false,
 
       activeFilter: "all",
 
       allPics: this.$store.state.photography,
 
-      filtered: []
+      filtered: [],
+
+      actions: [
+        {
+          name: 'Reset',
+          method: this.resetFilters
+        },
+        {
+          name: 'Price Highest',
+          method: this.filter_priceHigh
+        },
+        {
+          name: 'Price Lowest',
+          method: this.filter_priceLow
+        },
+        {
+          name: 'A - Z',
+          method: this.filter_aZ
+        },
+        {
+          name: 'Z - A',
+          method: this.filter_zA
+        }
+      ],
+
 
     }
 
@@ -124,4 +157,6 @@ export default  {
   },
 
 }
+
+
 
