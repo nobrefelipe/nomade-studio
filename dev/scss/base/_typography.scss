@@ -62,11 +62,12 @@ a{
 .view a,
 .home a{
 
+  &:not(.rmm-btn) {
     position: relative;
 
-    &:hover{
+    &:hover {
 
-      &:after{
+      &:after {
 
         width: 100%;
 
@@ -75,7 +76,7 @@ a{
       }
     }
 
-    &:after{
+    &:after {
 
       position: absolute;
 
@@ -94,6 +95,7 @@ a{
       transition: width .2s ease-in .1s
 
     }
+  }
 
 }
 

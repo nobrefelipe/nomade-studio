@@ -39,6 +39,16 @@
 
     opacity: 0;
 
+
+    &.router-link-active{
+
+      color: $pink;
+
+      cursor: default;
+
+    }
+
+
     @include desktop{
 
       filter: blur(4px);

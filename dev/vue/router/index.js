@@ -7,6 +7,7 @@ import Home from '../components/pages/home/index.vue';
 import Photography from '../components/pages/photography/index.vue';
 import WebDevelopment from '../components/pages/web-development/index.vue';
 import About from '../components/pages/about/index.vue';
+import Lab from '../components/pages/laboratory/index.vue';
 
 Vue.use(Router);
 
@@ -37,6 +38,14 @@ export default new Router({
       path: '/web-development',
       name: 'web-development',
       component: WebDevelopment
+
+    },
+
+    {
+
+      path: '/lab',
+      name: 'lab',
+      component: Lab
 
     },
 

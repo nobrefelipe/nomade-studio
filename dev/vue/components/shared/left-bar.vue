@@ -28,7 +28,7 @@
 
       <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
 
-      <router-link to="/web-development" title="WEB DEVELOPMENT">laboratory</router-link>
+      <router-link to="/lab" title="LABORATORY">laboratory</router-link>
 
       <router-link to="/about" title="ABOUT ME">about me</router-link>
 
