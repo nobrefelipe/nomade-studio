@@ -1,0 +1,87 @@
+<section class="photography view ">
+
+  <div class="filter" :class="{'show-filters': showFilter}">
+
+    <svg class="filter-icon" role="img" title="filter" @click="revealFilters">
+      <use xlink:href="./static/svg/svgstore.svg#filter"/>
+    </svg>
+
+    <ul class="filter-items" @click="onFilter($event)">
+
+      <li>all</li>
+
+      <li>street</li>
+
+      <li>people</li>
+
+      <li>portrait</li>
+
+      <li>black and white</li>
+
+      <li>landscape</li>
+
+    </ul>
+
+  </div>
+
+
+  <div class="gallery">
+
+
+    <div v-for="item in final_data" class="gallery-item">
+
+
+      <div class="caption" v-parallax="0.05">
+
+        <h5>{{ item.title }}</h5>
+
+        <!--<p class="is-text-right" v-html="item.description"></p>-->
+
+
+        <div class="camera-settings">
+
+          <span>{{ item.settings.camera }}</span>
+          <span>{{ item.settings.lenses }}</span>
+
+          <div class="lenses-settings">
+
+            <span>{{ item.settings.focal_length }}mm</span>
+            <span>ƒ/{{ item.settings.aperture }}</span>
+            <span>{{ item.settings.shutter_speed }}s</span>
+            <span>ISO {{ item.settings.iso }}</span>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="img">
+
+        <img :alt="item.title" v-lazy="item.image" sizes="100vw" > <!--v-parallax="0.1"-->
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <mt-actionsheet
+          :actions="actions"
+          v-model="sheetVisible">
+  </mt-actionsheet>
+
+</section>
+
+
+<!--
+
+ :src="'http://res.cloudinary.com/studio-nomade/image/upload/w_1000/' + item[0].title | sanitize "s
+
+-->

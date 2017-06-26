@@ -1,0 +1,130 @@
+.filter{
+
+  position: fixed;
+
+  top: 0;
+
+  left: 70px;
+
+  display: flex;
+
+  padding: 20px;
+
+  transition: background .4s ease-in;
+
+
+  @include mobile{
+
+    top: 50px;
+
+    left: 10px;
+
+    padding: 10px;
+
+  }
+
+
+  &.show-filters{
+
+    background: #F5F5F5;
+
+    .filter-icon{
+
+      path{
+
+        fill: $pink;
+
+      }
+
+    }
+
+    .filter-items{
+
+      li{
+
+        filter: blur(0px);
+
+        opacity: 1;
+
+        cursor: pointer;
+
+      }
+
+    }
+
+  }
+
+
+  &-icon{
+
+    width: 20px;
+
+    height: 25px;
+
+    cursor: pointer;
+
+
+    &:hover{
+
+      path{
+
+        fill: $pink;
+
+      }
+
+    }
+
+  }
+
+
+  &-items{
+
+    float: left;
+
+    margin-left: 20px;
+
+    margin-top: -3px;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: flex-start;
+
+    @include mobile{
+      display: none !important;
+    }
+
+
+
+    li{
+
+      font-family: 'Vanadine';
+
+      font-size: 20px;
+
+      line-height: 20px;
+
+      text-transform: uppercase;
+
+      padding: 0 20px;
+
+      transition: all .3s ease-in;
+
+      filter: blur(10px);
+
+      opacity: 0;
+
+
+      &:hover{
+
+        color: $pink;
+
+      }
+
+    }
+
+  }
+
+
+}

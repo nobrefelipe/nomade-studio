@@ -1,0 +1,69 @@
+<section class="web-development view">
+
+  <h1>WEB DEVELOPMENT</h1>
+
+  <p class="is-text-center">
+
+    I have been developing websites sice 2011, when I first jump into a Front End Developer Intership in Milan, Italy<br>
+
+    After 2 months of watching tutorials and reading articles I passed from ‘knowing nothing’  to  ‘have some idea’ about web development.<br>
+
+    But that was enought for the guys from More Interactive to give me a try :)<br><br>
+
+    Since that I keep learning as much as I can. It’s been 7 years of great opportunities, great people <br>
+
+    and amazing projects from Agencies in Milan to a Startup in London and from Contracts in Thailand to Remotes in Europe.<br><br>
+
+    Have a look on my  <router-link to="/lab" title="LABORATORY">Lab</router-link> page for some coding experiments usgin Vue.js. <br><br>
+
+    By the way, this website is built with Vue.js and <i>should</i> work offline as well by the power of Service Workers (on supported browser of course).<br><br>
+
+    My main skills are:
+
+  </p>
+  
+  
+  <ul class="skills-icons is-flexy is-center">
+    
+    <li><img src="static/img/html5-icon.png"     alt="HTML 5"></li>
+    <li><img src="static/img/css3-icon.png"      alt="CSS 3"></li>
+    <li><img src="static/img/js-icon.png"        alt="JAVASCRIPT"></li>
+    <li><img src="static/img/vuejs-icon.png"     alt="VUE JS"></li>
+    <li><img src="static/img/wordpress-icon.png" alt="WORDPRESS"></li>
+
+  </ul>
+
+  <blockquote>
+
+    Working as a freelancer is not just about the coding. <br>
+    I understand the challenges of working remotely on client projects.<br>
+    Here’s a couple of things I think I’m good at:
+
+  </blockquote>
+
+
+
+  <div class="features">
+
+    <div v-for="item in features" class="features-item">
+
+      <div>
+
+        <svg role="img" :title="item.name">
+          <use :xlink:href="'./static/svg/svgstore.svg#' + item.name"/>
+        </svg>
+
+        <h5>{{ item.name }}</h5>
+
+      </div>
+
+      <p v-html="item.description"></p>
+
+    </div>
+
+  </div>
+
+
+
+</section>
+

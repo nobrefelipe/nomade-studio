@@ -1,0 +1,49 @@
+#logo{
+
+  float: left;
+
+  width: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+
+  svg{
+
+    width: 45px;
+
+    height: 45px;
+
+  }
+
+
+  span{
+
+    font-size: 13px;
+
+    display: none;
+
+  }
+
+
+
+  @include mobile{
+
+    margin-top: 5px;
+
+    margin-left: 5px;
+
+    svg{
+
+      width: 35px;
+
+      height: 35px;
+
+    }
+
+  }
+
+}

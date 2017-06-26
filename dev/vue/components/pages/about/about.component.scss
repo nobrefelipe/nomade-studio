@@ -1,0 +1,60 @@
+.about {
+
+  .my-face{
+
+    float: left;
+
+    width: 210px;
+
+    margin: 10px 15px 0 0;
+
+  }
+
+
+  p{
+
+    width: 85%;
+
+
+    @media (max-width:667px) {
+
+      width: 100%;
+
+    }
+
+  }
+
+
+  .two-columns{
+
+    column-count: 2;
+
+    column-gap: 50px;
+
+    text-align: justify;
+
+    @media (max-width:667px) {
+
+      column-count: 1;
+
+      column-gap: 0;
+
+    }
+
+  }
+
+  a{
+
+    color: #D04058;
+
+    &:after{
+      display: none;
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+  }
+
+}

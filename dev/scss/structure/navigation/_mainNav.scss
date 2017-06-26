@@ -1,0 +1,83 @@
+/* MAIN NAV*/
+.mainNav{
+
+  float: right;
+
+  min-width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  margin-top: auto;
+
+  margin-bottom: auto;
+
+  overflow: hidden;
+
+  transition: all .3s ease .3s;
+
+
+  .menu-is-opened &{
+
+   max-height: 400px;
+
+  }
+
+
+  a{
+
+    font-size: 24px;
+
+    font-family: 'vanadine';
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+
+    &.router-link-active{
+
+      color: $pink;
+
+      cursor: default;
+
+    }
+
+
+    @include desktop{
+
+      filter: blur(4px);
+
+
+    }
+
+    .menu-is-opened &{
+
+      opacity: 1;
+
+      filter: blur(0);
+
+      transition: opacity .3s ease-in .6s, blur .3s ease-in .6s, color .3s ease-in 0s;
+
+
+    }
+
+  }
+
+
+  @include tablet{
+
+    min-width: 100%;
+
+    max-height: 0; // mate sure we hide the menu
+
+    align-items: center;
+
+  }
+
+}//.main-nav

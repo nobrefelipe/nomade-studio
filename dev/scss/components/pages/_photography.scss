@@ -1,0 +1,292 @@
+.photography{
+
+
+  .gallery{
+
+    float: left;
+
+    width: 100%;
+
+
+    &-item{
+
+      float: left;
+
+      width: 100%;
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 50px;
+
+      overflow: hidden;
+
+
+      @include mobilePortrait{
+
+
+        flex-direction: column-reverse !important;
+
+      }
+
+
+
+      //CAPTION
+      .caption{
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        width: 35%;
+
+
+        h5{
+
+          text-transform: capitalize;
+
+        }
+
+        p{
+
+          margin: 10px 0 0 0;
+
+          font-size: 14px;
+
+          line-height: 18px;
+
+        }
+
+
+        @include mobilePortrait{
+
+          width: 100%;
+
+          padding: 30px 10px;
+
+        }
+
+      }
+
+
+      //IMAGE
+      .img{
+
+        align-items: flex-start;
+
+        width: 65%;
+
+
+        @include mobilePortrait{
+
+          width: 100%;
+
+        }
+
+
+        img{
+
+          width: 100%;
+
+          transition: opacity .4s ease-in;
+
+          //LAZY LOAD SPINNER
+          &[lazy="loading"]{
+
+            background: #ccc;
+
+            padding: 30% 40%;
+
+            opacity: 0;
+
+            transform: translateX(100%);
+
+
+          }
+
+        }
+
+      }
+
+
+      //EVEN ROWS
+      &:nth-of-type(even){
+
+        flex-direction: row-reverse;
+
+        //.caption{
+        //
+        //  justify-content: flex-end;
+        //
+        //  align-items: flex-start;
+        //
+        //}
+
+      }
+
+
+      & > div{
+
+        float: left;
+
+        padding: 20px;
+
+        display: flex;
+
+        @include tablet{
+
+          padding: 10px;
+
+        }
+
+
+        @include mobilePortrait{
+
+          padding: 0;
+
+        }
+
+      }
+
+
+
+    }
+
+
+  }
+
+
+  .camera-settings{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 30px;
+
+
+
+    @include mobilePortrait{
+
+
+      margin-top: 10px;
+
+    }
+
+    > span{
+
+      font-size: 15px;
+
+      &:last-of-type{
+
+        font-size: 13px;
+
+        padding: 10px 0;
+
+      }
+
+    }
+
+    .lenses-settings{
+
+      display: flex;
+
+      span{
+
+        font-size: 13px;
+
+        &:not(:last-of-type){
+
+          &:after{
+
+            float: right;
+
+            content: '/';
+
+            margin: 0 7px;
+
+            color: rgba($grey, 0.3);
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+}
+
+/*
+
+
+&.is-reverse{
+
+
+        > div{
+
+          &:first-child{
+
+            padding-left: 20px;
+
+            padding-right: 0;
+
+          }
+
+          &:last-child{
+
+            padding-right: 20px;
+
+            padding-left: 0;
+
+          }
+
+        }
+
+      }
+
+
+      > div{
+
+        float: left;
+
+        &:not(.is-full){
+
+          width: 50%;
+
+        }
+
+        &:first-child{
+
+          padding-right: 20px;
+
+        }
+
+        &:last-child{
+
+          padding-left: 20px;
+
+        }
+
+      }
+
+
+      .is-full{
+
+        img{
+
+          padding: 0 20%;
+
+        }
+      }
+
+*/

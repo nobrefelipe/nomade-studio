@@ -1,0 +1,206 @@
+/*
+*
+*    FLEXY LAYOUT HELPER
+*    by Felipe Nobre
+*    www.nomade.studio
+*
+*/
+
+
+//MODIFIERS
+
+.is{
+
+  //set a flex container
+  &-flexy{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  &-nowrap{flex-wrap: nowrap;}
+
+
+  &-centred{
+    width: 100%;
+    max-width: $max-width;
+    margin: auto;
+  }
+
+  &-reverse{
+    flex-flow: row-reverse;
+
+    &__mobile{
+      @include mobile{
+        flex-flow: row-reverse wrap;
+      }
+    }
+  }
+
+
+
+  /*
+   FLEXBOX ALIGNMENT
+  */
+  &-top      { align-items: flex-start; }
+  &-middle   { align-items: center; }
+  &-bottom   { align-items: flex-end; }
+  &-stretch  { align-items: stretch; }
+  &-baseline { align-items: baseline; }
+
+  &-left     { justify-content: flex-start; }
+  &-center   { justify-content: center; text-align: center; }
+  &-right    { justify-content: flex-end; }
+  &-between  { justify-content: space-between; }
+  &-around   { justify-content: space-around; }
+
+
+
+  /*
+   ELEMENTS SIZING
+  */
+  &-full   { width: 100%; }
+  &-auto   { width: auto; }
+  &-fill   { width: 0; min-width: 0; flex-grow: 1; }
+  &-third  { width: calc(100% * 3 / 12); }
+  &-quarter{ width: calc(100% * 4 / 12); }
+  &-half   { width: calc(100% * 6 / 12); }
+
+  //no convensional sizes
+  &-1of12{ width: calc(100% * 1 / 12); }
+  &-2of12{ width: calc(100% * 2 / 12); }
+  &-5of12{ width: calc(100% * 5 / 12); }
+  &-8of12{ width: calc(100% * 8 / 12); }
+  &-9of12{ width: calc(100% * 9 / 12); }
+
+
+  /*
+    MOBILE EXCEPTIONs
+  */
+  @include mobile {
+    &-mobile{
+
+      //SIZING
+      &__full{width: 100% !important;}
+      &__half{width: calc(100% * 6 / 12) !important;}
+      &__third{ width: calc(100% * 3 / 12) !important;}
+      &__quarter{width: calc(100% * 4 / 12) !important;}
+
+      //CHILDREN ALIGNMENT
+      &__top      { align-items: flex-start; }
+      &__middle   { align-items: center; }
+      &__bottom   { align-items: flex-end; }
+      &__stretch  { align-items: stretch; }
+      &__baseline { align-items: baseline; }
+
+      //ALIGNMENT
+      &__left     { justify-content: flex-start; }
+      &__center   { justify-content: center; text-align: center }
+      &__right    { justify-content: flex-end; }
+      &__between  { justify-content: space-between; }
+      &__around   { justify-content: space-around; }
+    }
+  }//Mobile
+
+  /*
+    MOBILE EXCEPTIONs
+  */
+  @include tablet{
+    &-tablet{
+
+      //SIZING
+      &__full{width: 100% !important;}
+      &__half{width: calc(100% * 6 / 12) !important;}
+      &__third{ width: calc(100% * 3 / 12) !important;}
+      &__quarter{width: calc(100% * 4 / 12) !important;}
+
+      //CHILDREN ALIGNMENT
+      &__top      { align-items: flex-start; }
+      &__middle   { align-items: center; }
+      &__bottom   { align-items: flex-end; }
+      &__stretch  { align-items: stretch; }
+      &__baseline { align-items: baseline; }
+
+      //ALIGNMENT
+      &__left     { justify-content: flex-start; }
+      &__center   { justify-content: center; text-align: center }
+      &__right    { justify-content: flex-end; }
+      &__between  { justify-content: space-between; }
+      &__around   { justify-content: space-around; }
+    }
+  }//Tablet
+
+
+  /*
+    STICK POSITIONING
+  */
+  &-stick{
+    &__left{margin-right: auto;}
+    &__right{margin-left: auto;}
+    &__top{margin-bottom: auto;}
+    &__bottom{margin-top: auto;}
+  }
+
+
+
+  /*
+    OFFSET POSITIONING
+  */
+  &-offset{
+    &__half {
+      margin-left: 50%;
+    }
+    &__third {
+      margin-left: 33.3333%;
+    }
+    &__quarter {
+      margin-left: 25%;
+    }
+  }
+
+
+
+  /*
+    HIDDEN ELEMENTS
+  */
+  &-hidden{
+    &__mobile  {@include mobile {display: none !important;}}
+    &__desktop {@include desktop  {display: none !important;}}
+    &__small {@include tablet  {display: none !important;}}
+  }
+
+  &-only{
+    &__mobile {
+      display: none;
+      @include mobile {display: block !important;}
+    }
+    &__small {
+      display: none;
+      @include tablet  {display: block !important;}
+    }
+  }
+
+
+
+
+  /*
+     INVERT AXIS
+  */
+  &-column{
+    flex-flow: column;
+
+    &.is-top      { justify-content: flex-start; }
+    &.is-middle   { justify-content: center; }
+    &.is-bottom   { justify-content: flex-end; }
+    &.is-stretch  { justify-content: stretch; }
+    &.is-baseline { justify-content: baseline; }
+
+    &.is-left     { align-items: flex-start; }
+    &.is-center   { align-items: center; }
+    &.is-right    { align-items: flex-end; }
+    &.is-between  { align-items: space-between; }
+    &.is-around   { align-items: space-around; }
+
+  }
+}//.is

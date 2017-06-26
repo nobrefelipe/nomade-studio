@@ -1,0 +1,72 @@
+<section class="about view is-flexy is-center is-top is-column">
+
+  <h1>The developer</h1>
+
+  <p class="two-columns">
+
+    <img src="/static/img/felipe-nobre-portrait-shot.png" alt="Felipe Nobre Portrait Shot" class="my-face">
+
+    Hi there, my name is Felipe Nobre, I am a Front End Developer. I was born in Brazil but I call many places home. I moved to Italy when I was 17 years old and I am current living in Oxford, UK. <br><br>
+
+    I have been developing websites for the past 7 years. I started my career working as a junior front end developer in a web agency in Milan.
+    I have always been a self-taught guy, learning everything by myself made/make me have a better idea of my potential and limitations.<br><br>
+
+    After 3 years working in Milan I decided it was time for a change, so in 2013 I moved to London looking for the 'startup dream work'.
+    I got there eventually, working with <a href="https://www.wazoku.com" target="_blank">Wazoku</a> was an amazing experience.<br><br>
+
+    After that things just started to happen and I was already receiving great offers/opportunities and started to build my life in the UK.
+
+    In the past 3 years I had the opportunity to be part of great projects from different locations all around the world. <br>
+
+    I don't really like the idea of listing projects and clients or having case studies. I prefer to show my skills working and showcasing personal
+    projects and experiments on my <router-link to="/lab" title="Lab">Lab</router-link> page.<br>
+
+    I would like to share four projetcs tough, two of my firsts projects and two of the biggest clients I have worked with:
+
+    <br><br>
+
+    <a href="http://inovestills.com/" title="Inove Stills" target="_blank">Inove Stills</a> and
+    <a href="http://chalanamarket.co.uk/" title="Chalana" target="_blank">Chalana</a> were the guys that first gave me the
+    opportunity to work as a freelancer in UK. <br>
+    I couldn't expect that after that I would be developing a Wordpress Selling Platform for
+    <a href="http://www.harpercollins.com.au/" title="Harper Collins Australia" target="_blank">Harper Collins Australia</a> and
+    <a href="http://www.panmacmillan.com.au/" title="Pan Macmillan Australia" target="_blank">Pan Macmillan Australia</a>
+
+    <br><br>
+
+    Being a Front End Developer is a constant learning life as I need to be up to date with the latest technologies and trends so I can offer the best.
+    That's why I keep my eyes everyday on websites like: <strong>Codrops</strong>, <strong>SmashMagazine</strong>, <strong>Tableless</strong>, <strong>UpLabs</strong>, <strong>TechCrunch</strong> and more.<br><br>
+
+    Check my code on   <a href="https://github.com/nobrefelipe" title="GITHUB" target="_blank">Github</a>
+    and have a look on my  <router-link to="/web-development" title="WEB DEVELOPMENT">Web Development</router-link> page for more about my skills
+    then consider to <a href="mailto:felipe@nomade.studio" title="HIRE ME">Hire me</a>!
+
+  </p>
+
+  <br><br><br><br>
+
+  <h1>The photographer</h1>
+
+  <p>
+
+    After three years in London, I decided was time for a a break. I got married with a old friend from Italy and we decided to go travel South East Asia for a year.<br><br>
+
+    I started developing some good skills with my camera, I never thought I would like photography, now I love it. I learned how to master my camera and how to find the best shots.
+    Being in Asia was a school for life. Understanding people and culture was critical to find places and take pictures that would make me proud.<br><br>
+
+    We spent an entire month travelling Vietnam from South to North, taking busy buses and collecting amazing experiences. In Vietnam I've got to love taking portrait pictures and be
+    around looking for something I wouldn't know until I get my lenses in front of my eyes.<br><br>
+
+    <h3>Instagram feed</h3>
+
+  </p>
+
+  <ul id="instafeed" class="is-flexy is-wrap">
+
+    <li v-for="item in instafeed"><a :href="item.link" target="_blank"><img v-lazy="item.images.low_resolution.url"></a></li>
+
+  </ul>
+
+
+</section>
+
