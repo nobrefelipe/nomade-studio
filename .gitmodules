@@ -1,3 +1,6 @@
 [submodule "dev/vue/components/pages/laboratory/restaurant-menu-modal"]
 	path = dev/vue/components/pages/laboratory/restaurant-menu-modal
 	url = https://github.com/nobrefelipe/restaurant-menu-modal.git
+[submodule "dist/nobrefelipe.github.io"]
+	path = dist/nobrefelipe.github.io
+	url = https://github.com/nobrefelipe/nobrefelipe.github.io.git
