@@ -103,9 +103,6 @@ export default  {
         // scroll to top
         window.scrollTo(0, 0);
 
-        // hide filters
-        this.showFilter = false;
-
       }
 
     },
@@ -136,6 +133,9 @@ export default  {
 
       }
 
+      // hide filters
+      this.showFilter = false;
+
     },
 
 
@@ -146,6 +146,13 @@ export default  {
     revealFilters(){
 
       this.showFilter =  this.showFilter ? false : true;
+
+    },
+
+
+    onCLickOutside(){
+
+      this.showFilter = false;
 
     }
    
