@@ -12,6 +12,8 @@
 
   transition: background .4s ease-in;
 
+  z-index: 100;
+
 
   @include mobile{
 

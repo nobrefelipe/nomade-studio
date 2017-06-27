@@ -3,6 +3,9 @@ import Vue from 'vue';
 //Mint UI Action Sheets
 import { Actionsheet } from 'mint-ui';
 
+import scrollToTop from '../../../helpers/scroll-to-top';
+
+
 Vue.component(Actionsheet.name, Actionsheet);
 
 
@@ -79,6 +82,7 @@ export default  {
     // initial state, get all items
     this.filterPics('all');
 
+
   },
 
 
@@ -99,9 +103,6 @@ export default  {
 
         // filter it!
         this.filterPics(filter);
-
-        // scroll to top
-        window.scrollTo(0, 0);
 
       }
 
@@ -135,6 +136,9 @@ export default  {
 
       // hide filters
       this.showFilter = false;
+
+      // scroll to top
+      scrollToTop();
 
     },
 
