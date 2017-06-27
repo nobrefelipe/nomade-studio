@@ -1,5 +1,6 @@
 import Vue from 'vue';
 
+//Mint UI Action Sheets
 import { Actionsheet } from 'mint-ui';
 
 Vue.component(Actionsheet.name, Actionsheet);
@@ -23,37 +24,48 @@ export default  {
   data() {
     return {
 
-      sheetVisible: false,
+      isMobile: /iPhone|iPod|Android/i.test(navigator.userAgent), // Simple mobile user agent detecting
 
-      showFilter: false,
+      sheetVisible: false, // Hide Action Sheets initially
 
-      activeFilter: "all",
+      showFilter: false, // Hide filters initially
 
-      allPics: this.$store.state.photography,
+      allPics: this.$store.state.photography, // Get all pics from the store
 
-      filtered: [],
+      filtered: [], // The filtered array
 
-      actions: [
+      actions: [ // Action Sheet Methods
+
         {
-          name: 'Reset',
-          method: this.resetFilters
+          name: 'All',
+          method: () => { this.filterPics('all') }
         },
+
         {
-          name: 'Price Highest',
-          method: this.filter_priceHigh
+          name: 'Street',
+          method: () => { this.filterPics('street') }
         },
+
         {
-          name: 'Price Lowest',
-          method: this.filter_priceLow
+          name: 'People',
+          method: () => { this.filterPics('people') }
         },
+
         {
-          name: 'A - Z',
-          method: this.filter_aZ
+          name: 'Portrait',
+          method: () => { this.filterPics('portrait') }
         },
+
         {
-          name: 'Z - A',
-          method: this.filter_zA
+          name: 'Black and White',
+          method: () => { this.filterPics('black and white') }
+        },
+
+        {
+          name: 'Landscape',
+          method: () => { this.filterPics('landscape') }
         }
+
       ],
 
 
@@ -65,22 +77,7 @@ export default  {
   mounted(){
 
     // initial state, get all items
-    this.filtered =  (this.activeFilter == "all") ? this.allPics : [];
-
-  },
-
-
-  computed:{
-
-    /*
-      USE COMPUTED PROPERTY TO KEEP THE REACTIVITY
-      every time this.filtered change (by filtering) final_data will bee updated
-    */
-    final_data(){
-
-      return this.filtered;
-
-    }
+    this.filterPics('all');
 
   },
 
@@ -98,14 +95,13 @@ export default  {
       if(e.target && e.target.nodeName == "LI"){
 
         // get the inner text value and set the active filter
-        this.activeFilter = e.target.innerText.toLowerCase();
+        let filter = e.target.innerText.toLowerCase();
 
         // filter it!
-        this.filterPics();
+        this.filterPics(filter);
 
-
+        // scroll to top
         window.scrollTo(0, 0);
-
 
         // hide filters
         this.showFilter = false;
@@ -118,25 +114,23 @@ export default  {
     /*
       FILTER THE PICTURES BASED ON THE SELECTED FILTER
     */
-    filterPics(){
+    filterPics(filter){
 
       // clear filtered array
       this.filtered = [];
 
-      for( let p of this.allPics){
+      for( let pic of this.allPics){
 
+        if(filter == "all"){
 
-        if(this.activeFilter == "all"){
-
-          this.filtered.push(p);
+          this.filtered.push(pic);
 
         }
 
-        // activeFilter get its value after onFilter()
-        if(p.tags.includes(this.activeFilter)) {
+        if(pic.tags.includes(filter)) {
 
           // generate the filtered array
-          this.filtered.push(p)
+          this.filtered.push(pic)
 
         }
 
@@ -147,6 +141,7 @@ export default  {
 
     /*
       TOGGLE FILTER VISIBILITY
+      ( Smartphones will use the Mint UI Action Sheets )
     */
     revealFilters(){
 

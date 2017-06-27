@@ -1,6 +1,6 @@
 <section class="photography view ">
 
-  <div class="filter" :class="{'show-filters': showFilter}">
+  <div class="filter" :class="{'show-filters': showFilter}" @click="sheetVisible = true">
 
     <svg class="filter-icon" role="img" title="filter" @click="revealFilters">
       <use xlink:href="./static/svg/svgstore.svg#filter"/>
@@ -28,7 +28,7 @@
   <div class="gallery">
 
 
-    <div v-for="item in final_data" class="gallery-item">
+    <div v-for="item in filtered" class="gallery-item">
 
 
       <div class="caption" v-parallax="0.05">
@@ -73,8 +73,10 @@
 
 
   <mt-actionsheet
+          v-if="isMobile"
           :actions="actions"
-          v-model="sheetVisible">
+          v-model="sheetVisible"
+          cancelText="CANCEL">
   </mt-actionsheet>
 
 </section>

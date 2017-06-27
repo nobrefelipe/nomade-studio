@@ -7,6 +7,11 @@ import router from './router';
 import store from './store/store';
 
 
+/* EXTERNAL LIBRARIES*/
+import MintUI from 'mint-ui'; //Mint UI mobile library
+import 'mint-ui/lib/style.css' //Mint UI styles
+
+
 /* MY OWN DIRECTIVES */
 import ClickOutside from './directives/click-outside';
 
@@ -20,7 +25,8 @@ import VueParallaxJs from 'vue-parallax-js';
 
 /* INIT */
 Vue.use(Vuex);
-Vue.use(VueParallaxJs, {minWidth: 500})
+Vue.use(VueParallaxJs, {minWidth: 500});
+Vue.use(MintUI);
 
 //vue lazyload options
 Vue.use(VueLazyload, {
