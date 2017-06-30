@@ -8,6 +8,12 @@
 
     margin: 10px 15px 0 0;
 
+    @media all and (max-width:667px) {
+
+      width: 110px;
+
+    }
+
   }
 
 
@@ -16,7 +22,7 @@
     width: 85%;
 
 
-    @media (max-width:667px) {
+    @media all and (max-width:667px) {
 
       width: 100%;
 

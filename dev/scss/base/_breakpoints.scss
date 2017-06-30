@@ -14,7 +14,6 @@
   }
 }
 
-
 /* Mobile Portrait */
 @mixin mobilePortrait {
   @media (max-width:460px) {
@@ -25,6 +24,13 @@
 /* Mobile Landscape */
 @mixin mobileLandscape {
   @media (min-width:461px) and (max-width:667px) {
+    @content;
+  }
+}
+
+/* From Mobile */
+@mixin from_mobile {
+  @media (min-width:667px) {
     @content;
   }
 }

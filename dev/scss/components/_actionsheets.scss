@@ -12,6 +12,29 @@
   background: rgba(0,0,0,0) !important;
 
 
+  //Make sure to only show the Action Sheets on mobile
+  @include from_mobile{
+
+    display: none !important;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    & + .v-modal{
+
+      display: none !important;
+
+      opacity: 0;
+
+      visibility: hidden;
+
+
+    }
+
+  }
+
+
   // Each Item
   &-listitem{
 
@@ -64,6 +87,13 @@
     color: rgba(0, 118, 255,1) !important;
 
     background: rgba(250,250,250,0.9) !important;
+
+    //hide the pink border on hrefs
+    &:after{
+
+      display: none !important;
+
+    }
 
   }
 

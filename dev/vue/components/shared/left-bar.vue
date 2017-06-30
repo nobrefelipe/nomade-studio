@@ -24,9 +24,9 @@
     <!-- MAIN NAV -->
     <nav class="mainNav" @click="onNavigate($event)">
 
-      <router-link to="/photography" title="PHOTOGRAPHY">photography</router-link>
-
       <router-link to="/web-development" title="WEB DEVELOPMENT">web development</router-link>
+
+      <router-link to="/photography" title="PHOTOGRAPHY">photography</router-link>
 
       <router-link to="/lab" title="LABORATORY">laboratory</router-link>
 

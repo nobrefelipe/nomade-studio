@@ -19,16 +19,22 @@ import ClickOutside from './directives/click-outside';
 
 /* INSTALLED DIRECTIVES */
 import VueLazyload from 'vue-lazyload';
-import VueParallaxJs from 'vue-parallax-js';
+//import VueParallaxJs from 'vue-parallax-js';
 
 
 
 /* INIT */
+
+// Vuex
 Vue.use(Vuex);
-Vue.use(VueParallaxJs, {minWidth: 500});
+
+// Mint UI
 Vue.use(MintUI);
 
-//vue lazyload options
+// Vue Parallax
+//Vue.use(VueParallaxJs, {minWidth: 500});
+
+// Vue Lazy Load
 Vue.use(VueLazyload, {
 
   preLoad: 1.3,
