@@ -15,14 +15,13 @@ export default  {
 
   filters:{
 
-    sanitize: function (value) {
+    unsanitize: function (value) {
 
-      return value.replace(/ /g,"-");
+      return value.replace(/-/g," ");
 
     }
 
   },
-
 
   data() {
     return {

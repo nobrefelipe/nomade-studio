@@ -33,7 +33,7 @@
 
       <div class="caption">
 
-        <h5>{{ item.title }}</h5>
+        <h5>{{ item.title | unsanitize}}</h5>
 
         <!--<p class="is-text-right" v-html="item.description"></p>-->
 
@@ -61,7 +61,7 @@
 
       <div class="img">
 
-        <img :alt="item.title" v-lazy="item.image" sizes="100vw" > <!--v-parallax="0.1"-->
+        <img :alt="item.title" v-lazy="'http://res.cloudinary.com/studio-nomade/image/upload/' + item.title" sizes="100vw" > <!--v-parallax="0.1"-->
 
       </div>
 
