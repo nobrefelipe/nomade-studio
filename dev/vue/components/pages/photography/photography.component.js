@@ -64,7 +64,7 @@ export default  {
 
         {
           name: 'Black and White',
-          method: () => { this.filterPics('black and white') }
+          method: () => { this.filterPics('bnw') }
         },
 
         {
