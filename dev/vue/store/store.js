@@ -71,10 +71,575 @@ export default new Vuex.Store({
         photography: [
 
             {
-                title: "urban-exploration-series-1",
+                title: "vietnamese-faces-series-1",
                 description: "",
                 image: "",
                 tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "vietnamese-faces-series-2",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "vietnamese-faces-series-3",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "vietnamese-faces-series-4",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "vietnamese-faces-series-5",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "vietnamese-faces-series-6",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "sunset-bangkok",
+                description: "",
+                image: "",
+                tags: ["landscape", "sunset"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "into-the-sunset",
+                description: "",
+                image: "",
+                tags: ["landscape", "sunset"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+
+            {
+                title: "smoke",
+                description: "",
+                image: "",
+                tags: ["black and white", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "singapore-catedral",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "sinos",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "things"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "perfect-ratio-stares",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture", "black and white"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "singapore-bridge",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture", "black and white"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "hidden-oxford-series-1",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "hidden-oxford-series-2",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "hidden-oxford-series-3",
+                description: "",
+                image: "",
+                tags: ["city", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "hidden-oxford-series-4",
+                description: "",
+                image: "",
+                tags: ["portrait", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "do-not-hear-do-not-see-do-not-speak",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "things"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "through-the-gate",
+                description: "",
+                image: "",
+                tags: ["portrait", "people", "black and white"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "eyes",
+                description: "",
+                image: "",
+                tags: ["portrait", "people", "black and white"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "cleaning-time",
+                description: "",
+                image: "",
+                tags: ["black and white", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "chinatown-rua",
+                description: "",
+                image: "",
+                tags: ["street", "people", "urban"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "bangkok-from-below-series-1",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "bangkok-from-below-series-2",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "bangkok-from-below-series-3",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "chinatown-gate",
+                description: "",
+                image: "",
+                tags: ["street", "urban", "architecture"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "bus-stop",
+                description: "",
+                image: "",
+                tags: ["black and white", "people", "street", "urban"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "city-exploration-series-1",
+                description: "",
+                image: "",
+                tags: ["street", "urban"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+
+            {
+                title: "landscape-series-1",
+                description: "",
+                image: "",
+                tags: ["landscape"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "landscape-series-2",
+                description: "",
+                image: "",
+                tags: ["landscape"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+
+            {
+                title: "to-the-infinite",
+                description: "",
+                image: "",
+                tags: ["people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+
+            {
+                title: "paddling-the-whiteness",
+                description: "",
+                image: "",
+                tags: ["black and white", "people"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "a-pancake-for-a-smile",
+                description: "",
+                image: "",
+                tags: ["portrait", "people", "black and white"],
+                settings: {
+
+                    camera: "NX1",
+                    lenses: "NX 50-200mm F4-5.6",
+                    focal_length:"130",
+                    aperture: "5",
+                    shutter_speed: "1/320",
+                    iso: "200"
+
+                }
+            },
+
+            {
+                title: "urban-exploration-series-1",
+                description: "",
+                image: "",
+                tags: ["people", "urban", "street"],
                 settings: {
 
                     camera: "NX1",
@@ -91,7 +656,7 @@ export default new Vuex.Store({
                 title: "urban-exploration-series-2",
                 description: "",
                 image: "",
-                tags: ["portrait", "people"],
+                tags: ["people", "urban", "street"],
                 settings: {
 
                     camera: "NX1",
@@ -108,7 +673,7 @@ export default new Vuex.Store({
                 title: "urban-exploration-series-3",
                 description: "",
                 image: "",
-                tags: ["portrait", "people"],
+                tags: ["people", "urban", "street"],
                 settings: {
 
                     camera: "NX1",
@@ -125,7 +690,7 @@ export default new Vuex.Store({
                 title: "urban-exploration-series-4",
                 description: "",
                 image: "",
-                tags: ["portrait", "people"],
+                tags: ["people", "urban", "street"],
                 settings: {
 
                     camera: "NX1",
@@ -137,147 +702,6 @@ export default new Vuex.Store({
 
                 }
             },
-
-
-            {
-                title: "sunset-bangkok",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-
-            {
-                title: "through-the-gate",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-1",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-2",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-3",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-4",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-5",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-            {
-                title: "viatnamese-faces-series-6",
-                description: "",
-                image: "",
-                tags: ["portrait", "people"],
-                settings: {
-
-                    camera: "NX1",
-                    lenses: "NX 50-200mm F4-5.6",
-                    focal_length:"130",
-                    aperture: "5",
-                    shutter_speed: "1/320",
-                    iso: "200"
-
-                }
-            },
-
-
-
 
 
 
@@ -286,3 +710,4 @@ export default new Vuex.Store({
     }
 
 });
+

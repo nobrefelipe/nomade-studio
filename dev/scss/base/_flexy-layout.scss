@@ -6,6 +6,15 @@
 *
 */
 
+.row{
+
+  display: flex;
+  width: 100%;
+  float: left;
+  flex-wrap: wrap;
+
+}
+
 
 //MODIFIERS
 
@@ -139,7 +148,7 @@
     &__left{margin-right: auto;}
     &__right{margin-left: auto;}
     &__top{margin-bottom: auto;}
-    &__bottom{margin-top: auto;}
+    &__bottom{margin-top: auto !important;}
   }
 
 

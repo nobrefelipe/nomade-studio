@@ -1,4 +1,8 @@
 import Vue from 'vue';
+import VueFire from "vuefire";
+import db from "../../../db";
+
+Vue.use(VueFire);
 
 //Mint UI Action Sheets
 import { Actionsheet } from 'mint-ui';
@@ -32,9 +36,9 @@ export default  {
 
       showFilter: false, // Hide filters initially
 
-      allPics: this.$store.state.photography, // Get all pics from the store
+      allPics: '', //this.$store.state.photography, // Get all pics from the store
 
-      filtered: [], // The filtered array
+      filtered: null, // The filtered array
 
       actions: [ // Action Sheet Methods
 
@@ -75,6 +79,14 @@ export default  {
 
   },
 
+  firebase() {
+    return {
+
+      DB_PICS: db.ref('/photography')
+
+    }
+  },
+
 
   mounted(){
 
@@ -113,9 +125,36 @@ export default  {
     */
     filterPics(filter){
 
+      let vm = this;
+
       // clear filtered array
       this.filtered = [];
 
+
+      if(filter == 'all'){
+
+        vm.filtered = vm.DB_PICS;
+
+      }else{
+
+        vm.$firebaseRefs.DB_PICS.orderByChild('tags/' + filter).startAt(filter).once("value").then( res => {
+
+
+          res.forEach(function (data) {
+
+            vm.filtered.push(data.val());
+
+
+          });
+
+
+        });
+
+
+      }
+
+
+      /*
       for( let pic of this.allPics){
 
         if(filter == "all"){
@@ -132,6 +171,7 @@ export default  {
         }
 
       }
+      */
 
       // hide filters
       this.showFilter = false;

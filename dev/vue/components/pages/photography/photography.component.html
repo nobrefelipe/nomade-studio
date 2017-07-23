@@ -10,13 +10,13 @@
 
       <li>all</li>
 
-      <li>street</li>
+      <li>urban</li>
 
       <li>people</li>
 
       <li>portrait</li>
 
-      <li>black and white</li>
+      <li>bnw</li>
 
       <li>landscape</li>
 
@@ -28,12 +28,48 @@
   <div class="gallery" id="gallery">
 
 
+
+<!--
+    <div class="row is-top">
+
+      <div class="collection-frame">
+
+        <img src="http://res.cloudinary.com/studio-nomade/image/upload/v1499293251/vietnamese-faces-series-2.jpg" alt="" class="portraits">
+
+
+
+
+      </div>
+
+      <div class="collection-frame">
+
+        <img src="http://res.cloudinary.com/studio-nomade/image/upload/v1499284208/hidden-oxford-series-4.jpg" alt="" class="black-and-white">
+
+      </div>
+
+      <div class="collection-frame">
+
+        <img src="http://res.cloudinary.com/studio-nomade/image/upload/v1499293250/landscape-series-1.jpg" alt="" class="landscape">
+        <img src="http://res.cloudinary.com/studio-nomade/image/upload/v1499284201/bangkok-from-below-series-3.jpg" alt="" class="street">
+
+      </div>
+
+
+
+    </div>
+-->
+
+
+
+
+
+
     <div v-for="item in filtered" class="gallery-item">
 
 
       <div class="caption">
 
-        <h5>{{ item.title | unsanitize}}</h5>
+        <h5>{{ item.title }}</h5>
 
         <!--<p class="is-text-right" v-html="item.description"></p>-->
 
@@ -61,13 +97,19 @@
 
       <div class="img">
 
-        <img :alt="item.title" v-lazy="'http://res.cloudinary.com/studio-nomade/image/upload/' + item.title" sizes="100vw" > <!--v-parallax="0.1"-->
+        <img v-lazy="item.image_url" alt="">
+
+        <!--<img v-lazy="'https://res.cloudinary.com/studio-nomade/image/upload/w_2000/' + item.title"-->
+             <!--:data-srcset="'https://res.cloudinary.com/studio-nomade/image/upload/w_800/' + item.title + ' 800w, ' +-->
+                           <!--'https://res.cloudinary.com/studio-nomade/image/upload/w_1200/' + item.title + ' 1200w, ' +-->
+                           <!--'https://res.cloudinary.com/studio-nomade/image/upload/w_2000/' + item.title + ' 2000w' "-->
+             <!--sizes="(max-width: 984px) 100vw, 984px"-->
+             <!--:alt="item.title"> &lt;!&ndash;v-parallax="0.1"&ndash;&gt;-->
 
       </div>
 
 
     </div>
-
 
   </div>
 

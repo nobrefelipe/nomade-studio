@@ -1,3 +1,34 @@
 .photography {
 
+  .collection-frame{
+
+
+    max-width: 300px;
+    margin: 20px;
+
+    img{
+
+      float: left;
+      max-width: 300px;
+      margin: 20px 40px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+
+      &.black-and-white{
+
+        margin-top: 100px;
+
+      }
+
+      &.landscape{
+
+        max-width: 500px;
+
+      }
+
+    }
+
+  }
+
 }
